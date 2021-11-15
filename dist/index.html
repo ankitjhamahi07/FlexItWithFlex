@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Flex visualisation</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&amp;display=swap''><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="app-container">
+  <nav>
+    <h1>Flex It with
+      <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox" class="flex-redirect" target="-blank">
+        <em>display:flex<em>
+      </a>
+
+    </h1>
+  </nav>
+  <div class="flex-container" id="flex-container">
+    <div class="flex-item box-1">
+      1
+    </div>
+    <div class="flex-item box-2">
+      2
+    </div>
+    <div class="flex-item box-3">
+      3
+    </div>
+    <div class="flex-item box-4">
+      4
+    </div>
+    <div class="flex-item box-5">
+      5
+    </div>
+    <div class="flex-item box-6">
+      6
+    </div>
+    <div class="flex-item box-7">
+      7
+    </div>
+    <div class="flex-item box-8">
+      8
+    </div>
+  </div>
+  <div class="action">
+    <div class="radio-row">
+      <h3 class="flex-title"> Flex - Direction </h3>
+      <ul>
+        <li class="">
+          <input type="radio" id="direction-row" name="flex-direction" value="row" checked>
+            <label for="direction-row">row (default)</label>
+        </li>
+        <li class="">
+          <input type="radio" id="direction-row-reverse" name="flex-direction" value="row-reverse">
+            <label for="direction-row">row-reverse</label>
+        </li>
+        <li class="">
+          <input type="radio" id="direction-column" name="flex-direction" value="column">
+            <label for="direction-row">column</label>
+        </li>
+        <li class="">
+          <input type="radio" id="direction-column-reverse" name="flex-direction" value="column-reverse">
+          <label for="direction-row">column-reverse</label>
+        </li>
+      </ul>
+    </div>
+    <div class="radio-row">
+      <h3 class="flex-title"> Flex - Wrap </h3>
+      <ul>
+        <li class="">
+
+          <input type="radio" id="nowrap-row" name="flex-wrap" value="nowrap" checked>
+          <label for="nowrap-row">nowrap (default)</label>
+
+        </li>
+        <li class="">
+          <input type="radio" id="wrap-row" name="flex-wrap" value="wrap">
+          <label for="wrap-row">wrap</label>
+
+        </li>
+        <li class="">
+          <input type="radio" id="wrap-reverse-row" name="flex-wrap" value="wrap-reverse">
+          <label for="wrap-reverse-row">wrap-reverse</label>
+        </li>
+      </ul>
+    </div>
+    <div class="radio-row">
+      <h3 class="flex-title"> Justify-Content </h3>
+      <ul>
+        <li class="">
+          <input type="radio" id="justify-content-flex-start" name="justify-content" value="flex-start" checked>
+          <label for="justify-content-flex-start">flex-start</label>
+        </li>
+        <li class="">
+          <input type="radio" id="justify-content-flex-end" name="justify-content" value="flex-end">
+          <label for="justify-content-flex-end">flex-end</label>
+        </li>
+        <li class="">
+          <input type="radio" id="justify-content-center" name="justify-content" value="center">
+          <label for="justify-content-center">center</label>
+        </li>
+        <li class="">
+          <input type="radio" id="justify-content-space-around" name="justify-content" value="space-around">
+          <label for="justify-content-space-around">space-around</label>
+        </li>
+        <li class="">
+          <input type="radio" id="justify-content-space-between" name="justify-content" value="space-between">
+          <label for="justify-content-space-between">space-between</label>
+        </li>
+      </ul>
+    </div>
+    <div class="radio-row">
+      <h3 class="flex-title"> Align-Items </h3>
+      <ul>
+        <li class="">
+          <input type="radio" id="align-items-stretch" name="align-items" value="stretch" checked>
+          <label for="align-items-stretch">stretch</label>
+        </li>
+        <li class="">
+          <input type="radio" id="align-items-flex-start" name="align-items" value="flex-start">
+          <label for="align-items-flex-start">flex-start</label>
+        </li>
+        <li class="">
+          <input type="radio" id="align-items-flex-end" name="align-items" value="flex-end">
+          <label for="align-items-flex-end">flex-end</label>
+        </li>
+        <li class="">
+          <input type="radio" id="align-items-center" name="align-items" value="center">
+          <label for="align-items-center">center</label>
+        </li>
+        <li class="">
+          <input type="radio" id="align-items-baseline" name="align-items" value="baseline">
+          <label for="align-items-baseline">baseline</label>
+        </li>
+      </ul>
+    </div>
+    <div class="radio-row">
+      <h3 class="flex-title"> Align - Content </h3>
+      <ul>
+        <li class="">
+          <input type="radio" id="align-content-stretch" name="align-content" value="stretch" checked>
+          <label for="align-content-stretch">stretch</label>
+        </li>
+        <li class="">
+          <input type="radio" id="align-content-flex-start" name="align-content" value="flex-start">
+          <label for="align-content-flex-start">flex-start</label>
+        </li>
+        <li class="">
+          <input type="radio" id="align-content-flex-end" name="align-content" value="flex-end">
+          <label for="align-content-flex-end">flex-end</label>
+        </li>
+        <li class="">
+          <input type="radio" id="align-content-center" name="align-content" value="center">
+          <label for="align-content-center">center</label>
+        </li>
+        <li class="">
+          <input type="radio" id="align-content-space-around" name="align-content" value="space-around">
+          <label for="align-content-space-around">space-around</label>
+        </li>
+        <li class="">
+          <input type="radio" id="align-content-space-between" name="align-content" value="space-between">
+          <label for="align-content-space-between">space-between</label>
+      </ul>
+    </div>
+  </div>
+  <div class="code-row">
+    <h3> CSS Code </h3>
+    <code id="flex-css">
+      { <br> <br>
+      display:flex;<br>
+      flex-wrap: nowrap; <br>
+      justify-content: flex-start; <br>
+      align-items: stretch; <br>
+      align-content: stretch; <br> <br>
+      }<br>
+
+    </code>
+  </div>
+  <footer>
+    <h3>Made with Love and JS by <a href="https://ankitkumarjha.netlify.app" target="_blank"> Ankit </a> </h3>
+    <ul>
+      <li>
+        <a href="https://codepen.io/akj007ind/pen/ExvdaRG" target="_blank">
+          <i class="fab fa-codepen"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://linkedin.com/" target="_blank" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.github.com" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://ankitkumarjha.netlify.app" target="_blank">
+          <i class="fas fa-user"></i>
+        </a>
+      </li>
+  </footer>
+</div>
+<!-- partial -->
+  <script src='https://kit.fontawesome.com/283da036b7.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
